@@ -1,0 +1,9 @@
+{
+  "editor.formatOnSave": true,
+  "solidity.formatter": "prettier",
+  "solidity.defaultCompiler": "remote",
+  "[solidity]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "solidity.compileUsingRemoteVersion": "latest"
+}
