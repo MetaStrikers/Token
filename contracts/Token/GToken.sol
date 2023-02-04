@@ -17,8 +17,8 @@ contract GToken is Ownable, ERC20Capped {
         address to,
         uint256 initialSupply,
         uint96 _transferFee,
-		string memory name,
-		string memory symbol
+				string memory name,
+				string memory symbol
     ) ERC20(name, symbol) ERC20Capped(initialSupply) {
         _mint(to, initialSupply);
         transferFee = _transferFee;
