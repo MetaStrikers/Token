@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Capped.sol";
 
 contract GToken is Ownable, ERC20Capped {
 	uint96 public transferFee; // 100 = 1%
-	uint public maxFee = 1000;
+	uint96 public constant maxFee = 1000;
 
 	mapping(address => bool) public taxExemptedSenders; // 　If from address is true, the tax is exempt.
 	mapping(address => bool) public taxExemptedReceivers; // If to address is true, the tax is exempt.
